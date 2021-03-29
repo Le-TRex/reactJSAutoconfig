@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 import { makeStyles } from '@material-ui/core/styles'
@@ -20,19 +19,23 @@ const LinkStyle = {
   textDecoration: "none"
 }
 
-function Menu () {
-  const classes = useStyles()
-  return (
-    <div className={classes.root}>
-      <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
-        <Button><Link to="/" />Accueil</Button>
-        <Button><Link to="/about" />À propos</Button>
-        <Button><Link to="/contact" />Contact</Button>
-      </ButtonGroup>
-    </div>
+function Menu() {
 
+  const classes = useStyles();
+
+  return (
+    <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+      <Button>
+        <Link style={LinkStyle} to="/">Les canards</Link>
+      </Button>
+      <Button>
+        <Link style={LinkStyle} to="/about">Qui sommes-nous ?</Link>
+      </Button>
+      <Button>
+        <Link style={LinkStyle} to="/contact">Contact</Link>
+      </Button>
+    </ButtonGroup>
   )
 }
 
 export default Menu
-
