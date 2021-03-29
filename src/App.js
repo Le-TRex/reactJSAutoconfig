@@ -1,17 +1,19 @@
 import { Fragment } from 'react'
-import Menu from "./components/Menu"
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
+
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 
+import Menu from './components/Menu'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </Router>
+        <Footer />
       </Container>
     </Fragment>
   )
