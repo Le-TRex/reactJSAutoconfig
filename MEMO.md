@@ -14,3 +14,6 @@ npm ou yarn = ***
 *** eject ==> déplace la config mise à dispo par create-react-app des node_modules vers un dossier config. 
 Attention, pas de retour en arrière possible et rarement nécessaire.
 
+*** install @material-ui/core ==> utilisation de components déjà prêts
+
+*** i react-router-dom ==> gestion des routes
